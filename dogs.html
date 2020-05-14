@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Pets</title>
+	<meta name="viewport" content="width=device-width , intial-scale=1">
+	<link rel="stylesheet" href="pagestyle.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="study">
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQDmQAa3CuW-oQWdqkJVkWp1BNCbpWVNanpq3UDKAFWBTIvGI2Y&usqp=CAU">
+        
+    </div>
+      <div class="nav-links" id="nav-links">
+        <i class="fa fa-close" onclick="closeMenu()"></i>
+        <ul>
+          <a href="#"><li>HOME</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="#"><li>BREEDS</li></a>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </div>
+    <div class="banner-title">
+      <h1>“You want a friend in Washington? 
+ <span>Get a dog.</span>” – Harry S Truman</h1>
+      <button type="button" class="btn">Explore</button>
+    </div>
+    <div class="vertical-bar">
+      <div class="search-icon">
+        <i class="fa fa-th-list"></i>
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="social-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-pinterest"></i>
+        <i class="fa fa-twitter"></i>
+      </div>
+    </div>
+	</div>
+  <script>
+  var show=document.getElementById("nav-links");
+    function showMenu(){
+      show.style.right="0";
+    }
+    function closeMenu(){
+      show.style.right="-200px";
+    }
+  </script>
+</body>
+</html>
